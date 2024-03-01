@@ -22,7 +22,8 @@
     <main class="new-patient-form">
         <div class="patient-type">NEW PATIENT</div>
 
-        <form>
+        <!-- Form with action pointing to save_data.php -->
+        <form action="save_data.php" method="post">
             <div class="form-group">
                 <label for="patientName">Enter Patient Name*</label>
                 <input type="text" id="patientName" name="patientName" required>
@@ -43,7 +44,7 @@
                 <label for="passcode">Enter Passcode</label>
                 <input type="password" id="passcode" name="passcode">
             </div>
-            <button href="index.html" "submit">Save</button>
+            <button type="submit">Save</button>
         </form>
     </main>
 
