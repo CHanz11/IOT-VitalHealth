@@ -6,6 +6,10 @@
     <title>Health Monitoring Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add this script to include the AWS SDK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.1191.0/aws-sdk.min.js"></script>
+    <!-- Add this script tag to include your script.js file -->
+    <script src="script.js"></script>
 </head>
 <body class="register">
 
@@ -33,7 +37,7 @@
                     <th>EDIT</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="patient-data">
                 <!-- Sample data, replace with actual data from your database -->
                 <tr>
                     <td>1</td>
