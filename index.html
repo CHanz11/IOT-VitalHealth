@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add this script to include the AWS SDK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.1191.0/aws-sdk.min.js"></script>
+    <!-- Add this script tag to include your script.js file -->
+    <script src="script.js"></script>
+</head>
+<body class="register">
+
+    <header>
+        <div class="website-name">
+            IOT INTEGRATION<br>
+            FOR VITAL SIGNS MONITORING<br>
+            SYSTEM IN HEALTH SECTORS
+        </div>
+        <h1 class="dashboard-title">DASHBOARD</h1>
+        <a href="register.html" class="register-btn">REGISTER NEW RECORD</a>
+    </header>
+
+    <main class="register">
+        <div class="patient-record">PATIENT RECORD</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>VIEW</th>
+                    <th>EDIT</th>
+                </tr>
+            </thead>
+            <tbody id="patient-data">
+                <!-- Sample data, replace with actual data from your database -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>2024-02-18</td>
+                    <td>08:30 AM</td>
+                    <td><a href="viewdata.html"><i class="fa fa-eye"></i> View</a></td>
+                    <td><a href="#"><i class="fa fa-edit"></i> Edit</a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
